@@ -1,0 +1,3 @@
+SELECT TO_CHAR(DATA_NASC_CLIENTE,'MM') FROM TB_CLIENTES;
+
+select * from TB_clientes;
