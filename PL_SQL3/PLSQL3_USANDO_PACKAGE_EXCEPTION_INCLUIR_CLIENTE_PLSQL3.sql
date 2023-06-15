@@ -1,0 +1,17 @@
+/*
+ABRIR O BODY DO PACKAGE CLIENTE_PAC
+
+NA PARTE DE EXCEPTIONS DO PAC CLIENTE, INCLUIR O CÓDIGO
+
+    when exception_pac.e_null then
+        raise_application_error(-20020, 'Preenchimento do valor do campo é obrigatório');
+        
+ESSES SCRIPTS SERAO UTILIZADOS, TANTO NO INCLUIR_CLIENTE, QUANTO NA SOBRECARGA.
+*/
+
+/*TESTE COM USER_APP, USER_APP TEM UMA PROCEDURE APP_INCLUIR_CLIENTE QUE
+CHAMA O INCLUIR_CLIENTE DO CLIENTE_PAC*/
+
+execute app_incluir_cliente (null, 'INCLUINDO USER_APP PARA TESTAR VALOR NULO', '12222', 1, 100000);
+
+execute app_incluir_cliente (null, 'INCLUINDO USER_APP PARA TESTAR VALOR NULO', '12222', 1, 100000);
